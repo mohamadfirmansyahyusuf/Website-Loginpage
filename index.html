@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: hwb(0 0% 100%);
+            background-color: black;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,11 +17,13 @@
 
         .login-container {
             background-color: #fff;
+             background: url('bg_land.jpg') no-repeat center center fixed; /* Gambar background */
+            background-size: cover; /* Agar gambar memenuhi seluruh layar */
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             text-align: center;
-            width: 800px;
+            width: 500px;
             border: 1px solid #140505;
         }
 
@@ -41,7 +43,7 @@
         }
 
         .logo span {
-            color: #008000;
+            color: hsl(75, 25%, 97%);
         }
 
         .button-group {
@@ -72,7 +74,7 @@
         }
 
         .voucher-section input {
-            width: 100%;
+            width: 90%;
             padding: 12px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -121,7 +123,7 @@
         }
 
         .notice {
-            color: #0000FF;
+            color: hwb(240 97% 2%);
             font-size: 12px;
             margin: 10px 0;
         }
@@ -129,13 +131,13 @@
         .footer {
             margin-top: 15px;
             font-size: 14px;
-            color: #333;
+            color: hsl(0, 0%, 98%);
             border-top: 1px solid #ddd;
             padding-top: 10px;
         }
 
         .footer .highlight {
-            color: red;
+            color: #090512;
             font-weight: bold;
         }
 
@@ -161,7 +163,6 @@
         </div>
 
         <div class="login-buttons">
-            <button class="free-button">GRATIS 5 MENIT</button>
             <button class="login-button" onclick="login()">LOGIN</button>
         </div>
 
@@ -170,8 +171,13 @@
         </div>
 
         <div class="footer">
-            <p>Layanan Internet WiFi mulai <span class="highlight">Rp. 5.000,-</span><br>
-            Masa Aktif 1 Hari Internetan Sepuasnya</p>\
+            <p>Layanan Internet WiFi mulai</p>
+            <span class="highlight">Rp. 5.000,-</span><br>
+            Masa Aktif 1 Hari Internetan Sepuasnya</p>
+             <span class="highlight">Rp. 3.000,-</span><br>
+            Masa Aktif 6 Jam Internetan Sepuasnya</p>
+             <span class="highlight">Rp. 2.000,-</span><br>
+            Masa Aktif 4 Hari Internetan Sepuasnya</p>
         </div>
     </div>
 
